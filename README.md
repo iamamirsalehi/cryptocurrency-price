@@ -3,7 +3,7 @@ You can get the best prices of cryptocurrency for long and short
 
 ## Let's see how it works
 
-If you want to get the long price of USDT you can us like this
+If you want to get the long price of USDT you can use like this
 
 ```php
 <?php
