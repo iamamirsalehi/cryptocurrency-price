@@ -5,9 +5,9 @@ namespace Iamamirsalehi\Crawler;
 use Iamamirsalehi\Contracts\CrawlerInterface;
 use Iamamirsalehi\Helpers\Price;
 
-class USDT extends CrawlerInterface
+class TETHER extends CrawlerInterface
 {
-    public static $crawler = USDT::class;
+    public static $crawler = TETHER::class;
 
     public function long()
     {

@@ -7,22 +7,22 @@ class ClassesTest extends TestCase
 {
     public function test_ensure_getfullclassname_return_full_class_name()
     {
-        $class_full_name = Classes::getFullClassName('usdt', 'crawler');
+        $class_full_name = Classes::getFullClassName('tether', 'crawler');
 
         $this->assertNotNull($class_full_name);
         
-        $this->assertEquals('Iamamirsalehi\\Crawler\\USDT', $class_full_name);
+        $this->assertEquals('Iamamirsalehi\\Crawler\\TETHER', $class_full_name);
 
         return $class_full_name;
     }
 
     public function test_ensure_getfullclassname_does_not_return_full_class_name()
     {
-        $class_full_name = Classes::getFullClassName('usdt_error', 'crawler');
+        $class_full_name = Classes::getFullClassName('tether_error', 'crawler');
 
         $this->assertNotNull($class_full_name);
 
-        $this->assertNotEquals('Iamamirsalehi\\Crawler\\USDT', $class_full_name);
+        $this->assertNotEquals('Iamamirsalehi\\Crawler\\TETHER', $class_full_name);
     }
 
     /**

@@ -5,6 +5,7 @@ namespace Iamamirsalehi;
 use Iamamirsalehi\Helpers\Classes;
 use Iamamirsalehi\Helpers\StringFormater;
 use Iamamirsalehi\Exceptions\CryptoCurrencyNotFoundException;
+use Iamamirsalehi\Helpers\CryptoCurrentciesType;
 
 class CryptoCurrencies
 {
@@ -15,7 +16,7 @@ class CryptoCurrencies
         if(!Classes::checkClassExists($class_full_name))
             throw new CryptoCurrencyNotFoundException();
 
-        $called_class = new $class_full_name();
+        $called_class = new $class_full_name(CryptoCurrentciesType::getCryptoCurrentciesType($name));
 
         return $called_class;
     }

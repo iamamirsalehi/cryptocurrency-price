@@ -14,7 +14,7 @@ If you want to get the long price of USDT you can use like this
 ```php
 <?php
 
-CryptoCurrencies::usdt()->long();
+CryptoCurrencies::tether()->long();
 
 # codes
 ```
@@ -23,7 +23,7 @@ And for the short price
 ```php
 <?php
 
-CryptoCurrencies::usdt()->short();
+CryptoCurrencies::tether()->short();
 
 # codes
 ```

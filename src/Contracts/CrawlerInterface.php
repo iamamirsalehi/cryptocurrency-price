@@ -3,22 +3,25 @@
 namespace Iamamirsalehi\Contracts;
 
 use Goutte\Client;
+use Iamamirsalehi\Helpers\CryptoCurrentciesType;
 
 abstract class CrawlerInterface
 {
     public static $crawler;
 
-    protected $website = '';
+    public $coin;
 
     protected $client;
 
-    public function __construct()
+    public function __construct($coin)
     {
-        $this->website = 'https://arzex.io/tether/';
+        $this->coin = $coin;
+
+        $website = 'https://arzex.io/' . CryptoCurrentciesType::convertCoinAggregateToFullName($coin) . '/';
 
         $client = new Client();
 
-        $this->client = $client->request('GET', $this->website);
+        $this->client = $client->request('GET', $website);
     }
 
     abstract public function long();
