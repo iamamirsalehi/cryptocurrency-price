@@ -9,10 +9,8 @@ use Iamamirsalehi\Exceptions\CryptoCurrencyNotFoundException;
 class CryptoCurrencies
 {
     public static function __callStatic($name, $arguments)
-    {
-        $class_name = StringFormater::makeItUppercase($name);
-        
-        $class_full_name = Classes::getFullClassName($class_name, 'crawler');
+    {        
+        $class_full_name = Classes::getFullClassName($name, 'crawler');
 
         if(!Classes::checkClassExists($class_full_name))
             throw new CryptoCurrencyNotFoundException();

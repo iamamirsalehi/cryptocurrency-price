@@ -10,6 +10,7 @@ class PriceTest extends TestCase
         $price_without_text = Price::removeTomanTextFromPrice('25000 تومان'); 
 
         $this->assertNotNull($price_without_text);
+        
         $this->assertIsNumeric($price_without_text);
     } 
 
@@ -18,6 +19,7 @@ class PriceTest extends TestCase
         $price_without_text = Price::removeTomanTextFromPrice('25000'); 
 
         $this->assertNotNull($price_without_text);
+
         $this->assertIsNumeric($price_without_text);
     } 
 }
