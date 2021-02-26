@@ -19,11 +19,4 @@ class TETHER extends CrawlerInterface
         return Price::removeTomanTextFromPrice($this->client->filter('#RWPCS-usdt-table-sellers tr > td:nth-child(2)')->eq(0)->text());
     }
 
-    public function getLongAndShortPrices()
-    {
-        return [
-            'long'  => $this->long(),
-            'short' => $this->short(),
-        ];
-    }
 }

@@ -28,7 +28,13 @@ abstract class CrawlerInterface
 
     abstract public function short();
 
-    abstract public function getLongAndShortPrices();
+    public function getLongAndShortPrices()
+    {
+        return [
+            'long'  => $this->long(),
+            'short' => $this->short(),
+        ];
+    }
 
     public static function __callStatic($name, $arguments)
     {
