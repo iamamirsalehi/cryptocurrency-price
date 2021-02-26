@@ -10,7 +10,9 @@
         "name": "iamamirsalehi",
         "email": "iamamirsalehi@gmail.com"
     }],
-    "require": {},
+    "require": {
+        "fabpot/goutte": "^4.0"
+    },
     "autoload": {
         "psr-4": {
             "Iamamirsalehi\\": "src/"

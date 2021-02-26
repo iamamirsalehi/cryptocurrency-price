@@ -10,12 +10,12 @@ class Classes
     {
         $folder_name = StringFormater::makeTheFirstLetterUppercase($class_folder);
 
-        $class_full_name = 'Iamamirsalehi\\' . $folder_name . '\\' . $class_name . '.php';
+        $class_full_name = 'Iamamirsalehi\\' . $folder_name . '\\' . $class_name;
 
         return $class_full_name;
     }
 
-    public function checkClassExists(string $class_name):string
+    public static function checkClassExists(string $class_name):bool
     {
         return class_exists($class_name);
     }
