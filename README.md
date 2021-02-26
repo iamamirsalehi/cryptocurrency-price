@@ -1,6 +1,12 @@
 # cryptocurrency-price
 You can get the best prices of cryptocurrency for long and short
 
+## install this package
+
+```
+composer require iamamirsalehi/cryptocurrency-price
+```
+
 ## Let's see how it works
 
 If you want to get the long price of USDT you can use like this
