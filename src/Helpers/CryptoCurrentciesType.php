@@ -48,7 +48,7 @@ class CryptoCurrentciesType
         return [
              'btc'      => self::BITCOIN          ,
              'eth'      => self::ETHEREUM         ,
-             'usdt'     =>  self::TETHER          ,
+             'usdt'     => self::TETHER          ,
              'xrp'      => self::RIPPLE           ,
              'ltc'      => self::LITECOIN         ,
              'trx'      => self::TRON             ,

@@ -27,9 +27,9 @@ class ETHEREUMTest extends TestCase
         return $ethereum_short_price;
     }
 
-      /**
+    /**
      * @depends test_if_crawler_can_get_ethereum_long_price
-     * 
+     *
      * @depends test_if_crawler_can_get_ethereum_short_price
      */
     public function test_ensure_getLongAndShortPrices_method_get_the_both_prices($ethereum_long_price, $ethereum_short_price)

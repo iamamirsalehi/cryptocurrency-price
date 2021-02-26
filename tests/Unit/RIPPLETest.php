@@ -27,11 +27,11 @@ class RIPPLETest extends TestCase
         return $ripple_short_price;
     }
 
-     /**
-     * @depends test_if_crawler_can_get_ripple_long_price
-     * 
-     * @depends test_if_crawler_can_get_ripple_short_price
-     */
+    /**
+    * @depends test_if_crawler_can_get_ripple_long_price
+    *
+    * @depends test_if_crawler_can_get_ripple_short_price
+    */
     public function test_ensure_getLongAndShortPrices_method_get_the_both_prices($ripple_long_price, $ripple_short_price)
     {
         $both_prices = CryptoCurrencies::ripple()->getLongAndShortPrices();

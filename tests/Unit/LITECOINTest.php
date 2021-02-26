@@ -27,9 +27,9 @@ class LITECOINTest extends TestCase
         return $litecoin_short_price;
     }
 
-      /**
+    /**
      * @depends test_if_crawler_can_get_litecoin_long_price
-     * 
+     *
      * @depends test_if_crawler_can_get_litecoin_short_price
      */
     public function test_ensure_getLongAndShortPrices_method_get_the_both_prices($litecoin_long_price, $litecoin_short_price)

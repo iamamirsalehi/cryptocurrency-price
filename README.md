@@ -15,11 +15,11 @@ composer require iamamirsalehi/cryptocurrency-price
 * ripple
 * litecoin
 * tron
-* ethereumClassic
+* ethereum classic
 * stellar
 * binancecoin
 * eos
-* bitcoinCache
+* bitcoin cache
 * cardano
 * tezos
 * chainlink

@@ -27,9 +27,9 @@ class BITCOINTest extends TestCase
         return $bitcoin_short_price;
     }
 
-       /**
+    /**
      * @depends test_if_crawler_can_get_bitcoin_long_price
-     * 
+     *
      * @depends test_if_crawler_can_get_bitcoin_short_price
      */
     public function test_ensure_getLongAndShortPrices_method_get_the_both_prices($bitcoin_long_price, $bitcoin_short_price)

@@ -29,7 +29,7 @@ class TETHERTest extends TestCase
 
     /**
      * @depends test_if_crawler_can_get_tether_long_price
-     * 
+     *
      * @depends test_if_crawler_can_get_tether_short_price
      */
     public function test_ensure_getLongAndShortPrices_method_get_the_both_prices($tether_long_price, $tether_short_price)

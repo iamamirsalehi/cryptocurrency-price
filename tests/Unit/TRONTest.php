@@ -30,7 +30,7 @@ class TRONTest extends TestCase
 
     /**
      * @depends test_if_crawler_can_get_tron_long_price
-     * 
+     *
      * @depends test_if_crawler_can_get_tron_short_price
      */
     public function test_ensure_getLongAndShortPrices_method_get_the_both_prices($tron_long_price, $tron_short_price)
