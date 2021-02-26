@@ -1,0 +1,16 @@
+{
+    "name": "iamamirsalehi/cryptocurrency-price",
+    "description": "You can get the best prices of cryptocurrency for long and short",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "license": "mit",
+    "authors": [
+        {
+            "name": "iamamirsalehi",
+            "email": "iamamirsalehi@gmail.com"
+        }
+    ],
+    "require": {}
+}
