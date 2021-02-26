@@ -50,5 +50,13 @@ $short_price = CryptoCurrencies::bitcoin()->short();
 
 # codes
 ```
+or you can have both with just one call
+
+```php
+<?php
+
+$prices = CryptoCurrencies::bitcoin()->getLongAndShortPrices();
+
+```
 
 **the method works like this, You can just call the cryptocurrency that you want then call the _long_ or _short_ method**
