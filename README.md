@@ -26,6 +26,10 @@ composer require iamamirsalehi/cryptocurrency-price
 * monero
 * dogecoin
 
+## Where this pacakge gets the best prices from?
+
+This package get the best prices from [arzex](https://arzex.io/) and in the next versions I'll customize it for you
+
 ## Let's see how it works
 
 If you want to get the long price of bitcoin you can use like this
