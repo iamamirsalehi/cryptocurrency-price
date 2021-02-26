@@ -6,11 +6,14 @@
         "phpunit/phpunit": "^9.5"
     },
     "license": "mit",
-    "authors": [
-        {
-            "name": "iamamirsalehi",
-            "email": "iamamirsalehi@gmail.com"
+    "authors": [{
+        "name": "iamamirsalehi",
+        "email": "iamamirsalehi@gmail.com"
+    }],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Iamamirsalehi\\": "src/"
         }
-    ],
-    "require": {}
+    }
 }
