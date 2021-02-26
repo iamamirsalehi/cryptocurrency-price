@@ -33,7 +33,7 @@ If you want to get the long price of bitcoin you can use like this
 ```php
 <?php
 
-CryptoCurrencies::bitcoin()->long();
+$long_price = CryptoCurrencies::bitcoin()->long();
 
 # codes
 ```
@@ -42,7 +42,7 @@ And for the short price
 ```php
 <?php
 
-CryptoCurrencies::bitcoin()->short();
+$short_price = CryptoCurrencies::bitcoin()->short();
 
 # codes
 ```
