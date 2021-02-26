@@ -12,7 +12,7 @@ class CryptoCurrentciesType
     const TRON             = 'tron';
     const ETHEREUM_CLASSIC = 'ethereumClassic';
     const STELLAR          = 'stellar';
-    const BINANCECOIN      = 'binancecoin';
+    const BINANCECOIN      = 'binanceCoin';
     const EOS              = 'eos';
     const BITCOIN_CACHE    = 'bitcoinCache';
     const CARDANO          = 'cardano';
