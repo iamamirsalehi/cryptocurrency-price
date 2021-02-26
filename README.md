@@ -7,6 +7,25 @@ You can get the best prices of cryptocurrency for long and short
 composer require iamamirsalehi/cryptocurrency-price
 ```
 
+## List of supported cryptocurrencies
+
+* bitcoin
+* tether
+* ethereum
+* ripple
+* litecoin
+* tron
+* ethereumClassic
+* stellar
+* binancecoin
+* eos
+* bitcoinCache
+* cardano
+* tezos
+* chainlink
+* monero
+* dogecoin
+
 ## Let's see how it works
 
 If you want to get the long price of bitcoin you can use like this
