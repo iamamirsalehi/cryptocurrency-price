@@ -3,6 +3,7 @@
 namespace Iamamirsalehi\Contracts;
 
 use Goutte\Client;
+use Iamamirsalehi\Helpers\StringFormater;
 use Iamamirsalehi\Helpers\CryptoCurrentciesType;
 
 abstract class CrawlerInterface
@@ -17,7 +18,14 @@ abstract class CrawlerInterface
     {
         $this->coin = $coin;
 
-        $website = 'https://arzex.io/' . CryptoCurrentciesType::convertCoinAggregateToFullName($coin) . '/';
+        $website = '';
+
+        $converted_coin = StringFormater::findUppercaseCharacterAndMakeItLowerAdPutADashBehandIt($coin);
+
+        if(is_string($converted_coin))
+            $website = 'https://arzex.io/' . $converted_coin . '/';
+        else
+            $website = 'https://arzex.io/' . CryptoCurrentciesType::convertCoinAggregateToFullName($coin) . '/';
 
         $client = new Client();
 
