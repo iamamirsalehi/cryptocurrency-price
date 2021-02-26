@@ -14,7 +14,7 @@ class CryptoCurrentciesType
     const STELLAR          = 'stellar';
     const BINANCECOIN      = 'binanceCoin';
     const EOS              = 'eos';
-    const BITCOIN_CACHE    = 'bitcoinCache';
+    const BITCOIN_CASH     = 'bitcoinCash';
     const CARDANO          = 'cardano';
     const TEZOS            = 'tezos';
     const CHAINLINK        = 'chainlink';
@@ -34,7 +34,7 @@ class CryptoCurrentciesType
             self::STELLAR          => 'xlm',
             self::BINANCECOIN      => 'bnb',
             self::EOS              => 'eos',
-            self::BITCOIN_CACHE    => 'bch',
+            self::BITCOIN_CASH    => 'bch',
             self::CARDANO          => 'ada',
             self::TEZOS            => 'xtz',
             self::CHAINLINK        => 'link',
@@ -56,7 +56,7 @@ class CryptoCurrentciesType
              'xlm'      => self::STELLAR          ,
              'bnb'      => self::BINANCECOIN      ,
              'eos'      => self::EOS              ,
-             'bch'      => self::BITCOIN_CACHE    ,
+             'bch'      => self::BITCOIN_CASH    ,
              'ada'      => self::CARDANO          ,
              'xtz'      => self::TEZOS            ,
              'link'     =>  self::CHAINLINK       ,
