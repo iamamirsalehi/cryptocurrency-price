@@ -9,12 +9,12 @@ composer require iamamirsalehi/cryptocurrency-price
 
 ## Let's see how it works
 
-If you want to get the long price of USDT you can use like this
+If you want to get the long price of bitcoin you can use like this
 
 ```php
 <?php
 
-CryptoCurrencies::tether()->long();
+CryptoCurrencies::bitcoin()->long();
 
 # codes
 ```
@@ -23,7 +23,7 @@ And for the short price
 ```php
 <?php
 
-CryptoCurrencies::tether()->short();
+CryptoCurrencies::bitcoin()->short();
 
 # codes
 ```
